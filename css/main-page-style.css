@@ -1,0 +1,289 @@
+/* settings */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-size: 62.2%;
+}
+
+
+body {
+    color: #2b2d42;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.msg {
+    width: 45%;
+    min-height: 10px;
+    margin: 1.5rem;
+    padding: 0.55rem;
+    border: 0.3rem solid #2b2b2b;
+    border-radius: 15px;
+    font-size: 2rem;
+}
+.msg p {
+    margin: 0.4rem;
+}
+
+
+/* header */
+
+.hero-img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url('/img/leaves-8223213_1920.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+.hero-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.5);
+    z-index: -5;
+}
+
+/* navigation */
+
+.nav-links-group {
+    flex-direction: column;  
+}
+
+.chat {
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+    margin-top: 0.6rem;
+    padding: 1.5rem;
+    width: 130px;
+    background-color: #edf2f4;
+    border: 0.5rem solid #2b2d42;
+    border-radius: 60px;
+}
+
+a.link {
+    color: #2b2b2b;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.3s;
+    outline: none;
+}
+
+.active {
+    color: #8d99ae; 
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.3s;
+    outline: none;
+}
+
+a.link:hover {
+    transform: scale(1.25);
+}
+
+
+a.link:focus {
+    transform: scale(1.1);
+}
+
+a.active:hover {
+    color: #00aaed;
+}
+
+a.active:focus {
+    color: #00aaed;
+}
+
+/* messages */
+
+.area {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    height: 57.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.msgs-area {
+    margin: 2rem;
+    width: 100%;
+    height: 100%;
+    background-color: #edf2f4;
+    border-radius: 12px;
+    overflow: scroll;
+}
+
+.chat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 7rem;
+}
+
+.chat-msg {
+    margin-top: 4%;
+}
+
+.chat-text-button i {
+    padding: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.8rem;
+}
+
+.chat-text-button {
+    margin: 1rem;
+    margin-left: 1.5rem;
+    height: 4.5rem;
+    border-radius: 6rem;
+    border: 0.4rem solid #00aaed;
+    background-color: #00aaed;
+    color: #edf2f4;
+    text-decoration: none;
+    outline: none;
+}
+
+.chat-text-button:hover, .chat-text-button:focus {
+    background-color: #029fde;
+    color: #cfd4d6;
+    border: 0.4rem solid #029fde;
+    transition: 0.3s;
+}
+
+.chat-msg-input {
+    padding: 1rem;
+    width: 60%;
+    font-size: 2.5rem;
+    border-radius: 2.5rem;
+    border: none;
+    outline: none;
+}
+
+.chat-msg-input:focus {
+    background-color: #ececec;
+}
+
+/* Media Queries - width */
+
+@media (min-width: 576px) {
+    .nav-links-group {
+        flex-direction: row;
+    }
+    .chat {
+        height: 14rem;
+        width: 14rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .chat {
+        width: 17rem;
+        margin-top: 1.3rem;
+        margin-bottom: 0.5rem;
+    }
+    a.link:focus {
+        transform: scale(1.25);
+    }
+
+}
+
+@media (min-width: 992px) {
+    .chat {
+        width: 20rem;
+        height: 9rem;
+    }
+}
+
+
+/* Media Queries - height */
+
+@media (min-height: 600px) {
+    .area {
+        height: 55%;
+    }
+}
+
+@media (min-height: 625px) {
+    .area {
+        height: 58%;
+    }
+}
+
+@media (min-height: 650px) {
+    .area {
+        height: 60%;
+    }
+}
+
+@media (min-height: 675px) {
+    .area {
+        height: 62%;
+    }
+}
+
+@media (min-height: 700px) {
+    .area {
+        height: 65%;
+    }
+}
+
+@media (min-height: 825px) {
+    .area {
+        height: 70%;
+    }
+}
+
+@media (min-height: 900px) {
+    .area {
+        height: 75%;
+    }
+    .chat {
+        width: 13rem;
+        height: 10rem;
+    }
+}
+
+
+@media (min-height: 1000px) {
+    .area {
+        height: 76%;
+    }
+    .chat {
+        width: 17rem;
+        height: 10rem;
+    }
+} 
+
+@media (min-height: 1300px) {
+    .area {
+        height: 81%;
+    }
+} 
+
+@media (min-width: 1100px) {
+    .area {
+        height: 73%;
+    }
+    .chat-msg {
+        margin-top: 1.5%;
+    }
+}
