@@ -24,7 +24,7 @@ body {
     position: absolute;
     height: 100%;
     width: 100%;
-    background-image: url('/img/leaves-8223213_1920.jpg');
+    background-image: url('../img/leaves-8223213_1920.jpg');
     background-size: cover;
     background-position: center;
     font-size: 2.5rem;
