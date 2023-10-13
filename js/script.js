@@ -1,8 +1,8 @@
 const chatInput = document.querySelector('.chat-msg-input');
 const chatButton = document.querySelector('.chat-text-button');
 const chatArea = document.querySelector('.msgs-area');
-const add_msg_sound = new Audio('/audio/chat-sound.mp3');
-const click_btn_sound = new Audio('/audio/click_btn_sound.mp3');
+const add_msg_sound = new Audio('../audio/chat-sound.mp3');
+const click_btn_sound = new Audio('../audio/click_btn_sound.mp3');
 
 const createMsg = () => {
     let msg = document.createElement("div")
